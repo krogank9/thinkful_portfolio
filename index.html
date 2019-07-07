@@ -6,148 +6,194 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="normalize.css">
 		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="hamburger-menu.css">
 		
 		<link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	</head>
 	
 	<body>
-		<nav role="navigation">
-			<div>
-				<img src="logo.svg" style="width: auto; height: 100px;">
-			</div>
-			<div>
-				<ul class="nav-menu-list">
+		<div class="body-container">
+			<nav class="header">
+				<a href="#about-me" class="logo"><img class="logo" src="logo.svg" alt="Logan Krumbhaar"></a>
+				<input class="menu-btn" type="checkbox" id="menu-btn" />
+				<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+				<ul class="menu">
 					<li><a href="#about-me">About Me</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#contact" class="contact-link">Contact</a></li>
 				</ul>
-			</div>
-		</nav>
-		
-		<main>
-			<header role="banner">
-				<h1>Web Developer and Application Designer</h1>
-				<div>
-					<p>I build solid software from the ground up that people depend on.</p>
-				</div>
-				<img class="avatar" src="avatar.svg">
-			</header>
-			
-			<section id="about-me" class="about-me">
-				
-				<h2>Hi, I'm Logan. Nice to meet you.</h2>
-				<div>
-					<p class="long-paragraph">
-						I am a web and application developer currently enrolled in Thinkful's Full Stack Flex web development program.
-						My favorite programming languages and platforms are Javascript, Java, C/C++, Android, and HTML5.
-						I have made several Android apps that many people have found useful with more than 10,000 total downloads.
-						One of the most enjoyable things about programming to me is how each new project is like a puzzle.
-						You have to figure out how the broader project architecture will fit together,
-						as well as find and fix bugs which can be like solving an interesting mystery itself.
-					</p>
-				</div>
-				<div>
-					<p class="long-paragraph">
-						When I'm not coding, I enjoy spending my time relaxing in nature or bettering myself.
-						Destressing by walking in lush green forests and national parks is one of my favorite things to do.
-						I'm very health conscious and you can often catch me working out or snacking on some kale.
-						Although I try to give myself time away from the screen when I'm not working,
-						I often find myself drawn back to invest time in personal projects as well as learning new things.
-						In addition to programming, I'm interested in a bunch of different topics such as history, science, and psychology.
-					</p>
-				</div>
-			</section>
-			
-			<section id="portfolio" class="portfolio">
-				<h2>Portfolio</h2>
+			</nav>
 
-				<div class="portfolio-card">
-					<img src="wifimouse-icon.svg">
-					<h3>WifiMouse</h3>
-					<p>This is an Android application I developed which turns your phone into a wireless mouse and keyboard with many interesting and useful features.</p>
-					<div><a href="#">Read more... (Modal popup)</a></div>
+			<main>
+				<header role="banner">
+					<h1>Web Developer and Application Designer</h1>
+					<div>
+						<p>I build solid software from the ground up that people depend on.</p>
+					</div>
+					<img class="avatar" src="avatar.svg" alt="Logan Krumbhaar Avatar">
+				</header>
+				
+				<section id="about-me" class="about-me">
+					<h2>Hi, I'm Logan. Nice to meet you.</h2>
+					<div>
+						<p class="long-paragraph">
+							I am a web and application developer currently enrolled in Thinkful's Full Stack Flex web development program.
+							My favorite programming languages and platforms are Javascript, Java, C/C++, Android, and HTML5.
+							I have made several Android apps that many people have found useful with more than 10,000 total downloads.
+							One of the most enjoyable things about programming to me is how each new project is like a puzzle.
+							You have to figure out how the broader project architecture will fit together,
+							as well as find and fix bugs which can be like solving an interesting mystery itself.
+						</p>
+					</div>
+					<div>
+						<p class="long-paragraph">
+							When I'm not coding, I enjoy spending my time relaxing in nature or bettering myself.
+							Destressing by walking in lush green forests and national parks is one of my favorite things to do.
+							I'm very health conscious and you can often catch me working out or snacking on some kale.
+							Although I try to give myself time away from the screen when I'm not working,
+							I often find myself drawn back to invest time in personal projects as well as learning new things.
+							In addition to programming, I'm interested in a bunch of different topics such as history, science, and psychology.
+						</p>
+					</div>
+				</section>
+				
+				<section id="portfolio" class="portfolio">
+					<h2>Portfolio</h2>
+					<div class="row">
+						
+						<div class="col-4">
+							<div class="portfolio-card">
+								<img src="wifimouse-icon.svg" alt="WifiMouse Icon">
+								<h3>WifiMouse</h3>
+								<p>This is an Android application I developed which turns your phone into a wireless mouse and keyboard with many interesting and useful features.</p>
+								<div><label for="modal-1-open-checkbox" class="portfolio-read-more">Read more...</label></div>
+							</div>
+						</div>
+						
+						<div class="col-4">
+							<div class="portfolio-card">
+								<img src="zombie-icon.png" alt="Zombie Icon">
+								<h3>Zombie Apocalypse Quiz</h3>
+								<p>This is an online quiz web app developed during my time at Thinkful while taking part in their Full Stack Flex Course.</p>
+								<div><label for="modal-2-open-checkbox" class="portfolio-read-more">Read more...</label></div>
+							</div>
+						</div>
+						
+						<div class="col-4">
+							<div class="portfolio-card">
+								<img src="wifimouse-icon.svg" alt="WifiMouse Icon">
+								<h3>Placeholder</h3>
+								<p>This is a placeholder until I have a third project to put here to make this part symetrical on desktop.</p>
+								<div><label for="modal-1-open-checkbox" class="portfolio-read-more">Read more...</label></div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+			</main>
+			
+			<footer role="content-info">
+				<div class="contact-info" id="contact">
+					<div>
+						<h2>Location</h2>
+						<p>King of Prussia, PA</p>
+					</div>
+					<div>
+						<h2>Around the Web</h2>
+						<div class="circle-button-row">
+							<a class="circle-button" href="https://github.com/krogank9/">
+								<i class="fa fa-fw fa-github"></i>
+							</a>
+							<a class="circle-button" href="https://www.linkedin.com/in/logan-krumbhaar-691175153">
+								<i class="fa fa-fw fa-linkedin"></i>
+							</a>
+							<a class="circle-button" href="https://www.youtube.com/channel/UCpH93goetR0u9ejeAR8M4Nw">
+								<i class="fa fa-fw fa-youtube"></i>
+							</a>
+						</div>
+					</div>
+					<div>
+						<h2>Contact</h2>
+						<p>logan_k at live dot com</p>
+					</div>
 				</div>
 				
-				<div class="portfolio-card">
-					<img src="zombie-icon.png">
-					<h3>Zombie Apocalypse Quiz</h3>
-					<p>This is an online quiz web app developed during my time at Thinkful while taking part in their Full Stack Flex Course.</p>
-					<div><a href="#">Read more... (Modal popup)</a></div>
+				<div class="copyright">
+					Copyright &copy; Logan Krumbhaar 2019
 				</div>
-				
-				<div class="portfolio-card">
-					<img src="wifimouse-icon.svg">
-					<h3>Placeholder</h3>
-					<p>This is a placeholder until I have a third project to put here to make this part symetrical on desktop.</p>
-					<div><a href="#">Read more... (Modal popup)</a></div>
-				</div>
-			</section>
-		</main>
+			</footer>
 		
-		<footer id="contact" role="content-info">
-			<div>
-				<h2>Location</h2>
-				<p>King of Prussia, PA</p>
-			</div>
-			<div>
-				<h2>Around the Web</h2>
-				<p>
-					<a href="https://github.com/krogank9/">GitHub</a>
-					/ <a href="https://www.linkedin.com/in/logan-krumbhaar-691175153">LinkedIn</a>
-					/ <a href="https://www.youtube.com/channel/UCpH93goetR0u9ejeAR8M4Nw">YouTube</a>
-				</p>
-			</div>
-			<div>
-				<h2>Contact</h2>
-				<p>logan_k at live dot com</p>
-			</div>
-		</footer>
-		
+		</div> <!-- end of body-container -->
+
 		<!-- --------- Portfolio Modals ---------- -->
+		<input id="modal-1-open-checkbox" class="modal-open-checkbox" type="checkbox">
+		<input id="modal-2-open-checkbox" class="modal-open-checkbox" type="checkbox">
 		
 		<!-- Modal popup #1 -->
-		<div class="portfolio-modal" id="portfolio-modal-1">
-			<h2>WifiMouse</h2>
-			<div>
-				<a href="https://wifimouse.github.io/">Live app</a>
-				/ <a href="https://github.com/krogank9/WifiMouseServer">Server source code</a>
-				/ <a href="https://github.com/krogank9/WifiMouse">Client source code</a>
+		<div class="portfolio-modal-container hide modal-1">
+			<div class="portfolio-modal" id="portfolio-modal-1">
+				<div class="portfolio-x-container">
+					<label for="modal-1-open-checkbox" class="portfolio-x-button">
+						<i class="fa fa-3x fa-times"></i>
+					</label>
+				</div>
+				<div class="portfolio-modal-contents">
+					<h2>WifiMouse</h2>
+					<div class="portfolio-links">
+						<a href="https://wifimouse.github.io/">Live app</a>
+						/ <a href="https://github.com/krogank9/WifiMouseServer">Server source code</a>
+						/ <a href="https://github.com/krogank9/WifiMouse">Client source code</a>
+					</div>
+					<img class="portfolio-image" src="wifimouse-screenshot.jpg" alt="WifiMouse Screenshot">
+					<p class="long-paragraph mb-5">
+						This app turns your phone into a super compact yet full-featured wireless keyboard for your phone.
+						It has many useful features such as screen mirroring, CPU/process monitoring, wireless file transfer, and an application launcher.
+						This app had 2 components; the Android client and the cross-platform desktop server.
+						Simply download the 2 applications, connect to the same WiFi network (or connect via Bluetooth if on Mac/Linux),
+						choose a remote and enjoy the convenience of full control over your computer from your pocket.
+						Perfect for watching Netflix or for controlling Home Media Centers.
+						<br>
+						<br>
+						To create WifiMouse I used Java for the Android app, and I used C/C++ with Qt for the server.
+						Includes an encryption technique that uses AES-256 to secure data of packets sent over the network.
+						<br>
+						<br>
+						<span class="italic">Note: Currently unmaintained, this app doesn't produce enough revenue to allow me to regularly update it.</span>
+					</p>
+					<label for="modal-1-open-checkbox" class="portfolio-close-button">
+						<i class="fa fa-close"></i> Close Project
+					</label>
+				</div>
 			</div>
-			<img src="wifimouse-screenshot.jpg">
-			<p>
-				This app turns your phone into a super compact yet full-featured wireless keyboard for your phone.
-				It has many useful features such as screen mirroring, CPU/process monitoring, wireless file transfer, and an application launcher.
-				This app had 2 components; the Android client and the cross-platform desktop server.
-				Simply download the 2 applications, connect to the same WiFi network (or connect via Bluetooth if on Mac/Linux),
-				choose a remote and enjoy the convenience of full control over your computer from your pocket.
-				Perfect for watching Netflix or for controlling Home Media Centers.
-				<br>
-				<br>
-				To create WifiMouse I used Java for the Android app, and I used C/C++ with Qt for the server.
-				Includes an encryption technique that uses AES-256 to secure data of packets sent over the network.
-				<br>
-				<br>
-				Note: Currently unmaintained, this app doesn't produce enough revenue to allow me to regularly update it.
-			</p>
-			<a href="#">Close Project</a>
 		</div>
 		
 		<!-- Modal popup #2 -->
-		<div class="portfolio-modal" id="portfolio-modal-2">
-			<h2>Zombie Apocalypse Quiz</h2>
-			<div>
-				<a href="https://krogank9.github.io/thinkful-quiz-app/">Live app</a>
-				/ <a href="https://github.com/krogank9/thinkful-quiz-app">Source code</a>
+		<div class="portfolio-modal-container modal-2">
+			<div class="portfolio-modal" id="portfolio-modal-2">
+				<div class="portfolio-x-container">
+					<label for="modal-2-open-checkbox" class="portfolio-x-button">
+						<i class="fa fa-3x fa-times"></i>
+					</label>
+				</div>
+				<div class="portfolio-modal-contents">
+					<h2>Zombie Apocalypse Quiz</h2>
+					<div class="portfolio-links">
+						<a href="https://krogank9.github.io/thinkful-quiz-app/">Live app</a>
+						/ <a href="https://github.com/krogank9/thinkful-quiz-app">Source code</a>
+					</div>
+					<img class="portfolio-image" src="zombie-screenshot.jpg" alt="Zombie Apocalypse Quiz App Screenshot">
+					<p class="long-paragraph mb-5">
+						This app was the first project completed in my time at Thinkful's full-stack web development course.
+						It is designed to showcase my knowledge in semantic HTML, CSS, jQuery, event delegation, Javascript, and proper programming practices.
+						The topic of the quiz is zombie survival tactics! Take the quiz to find out if you are prepared for the zombie apocalypse.
+					</p>
+					<label for="modal-2-open-checkbox" class="portfolio-close-button">
+						<i class="fa fa-close"></i> Close Project
+					</label>
+				</div>
 			</div>
-			<img src="zombie-screenshot.jpg">
-			<p>
-				This app was the first project completed in Thinkful's full-stack web development course.
-				It is designed to showcase my knowledge in semantic HTML, CSS, jQuery, event delegation, Javascript, and proper programming practices.
-				The topic of the quiz is zombie survival tactics! Take the quiz to find out if you are prepared for the zombie apocalypse!
-			</p>
-			<a href="#">Close Project</a>
 		</div>
-			
-	</body>
-	
+		
+	</body>	
 </html>
