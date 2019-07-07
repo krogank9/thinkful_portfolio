@@ -289,10 +289,6 @@ body {
 	display: none;
 }
 
-body:has(> .modal-open-checkbox) {
-	overflow: hidden;
-}
-
 #modal-1-open-checkbox:checked ~ .modal-1 {
 	display: block;
 }
@@ -302,7 +298,8 @@ body:has(> .modal-open-checkbox) {
 
 .portfolio-modal-container  {
 	display: none;
-	overflow-y: scroll;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 	overflow-x: hidden;
 	position: fixed;
 	left: 0;
