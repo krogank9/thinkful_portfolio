@@ -4,7 +4,9 @@ $(".portfolio-read-more").click(function(e){
 	let modal = $(".portfolio-modal-container.modal-"+modalNum);
 	modal.css("display", "block").scrollTop(0);
 	
-	/* disable scrolling on body to allow scrolling of modal */
+	/* disable scrolling on body to allow scrolling of modal.
+	 * iPhone body scrolling in modals is quite a pesky issue,
+	 * decided to use a lib. */
 	bodyScrollLock.disableBodyScroll(modal[0]);
 });
 
