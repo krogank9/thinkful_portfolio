@@ -6,7 +6,8 @@ $(".portfolio-read-more").click(function(e){
 	
 	/* disable scrolling on body to allow scrolling of modal.
 	 * iPhone body scrolling in modals is quite a pesky issue,
-	 * decided to use a lib. */
+	 * decided to use a lib. this works 99% but still can scroll
+	 * body if you zoom out quickly. good enough */
 	bodyScrollLock.disableBodyScroll(modal[0]);
 });
 
