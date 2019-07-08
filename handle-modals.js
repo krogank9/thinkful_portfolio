@@ -5,6 +5,7 @@ $(".portfolio-read-more").click(function(e){
 	
 	/* disable scrolling on body to allow scrolling of modal */
 	$("body").css("overflow", "hidden");
+	$('body').css('position','fixed');
 });
 
 /* close (hide) all modals upon clicking a close button within one */
@@ -13,4 +14,5 @@ $(".portfolio-close-button, .portfolio-x-button").click(function() {
 	
 	/* re enable scrolling on body now that modal has disappeared */
 	$("body").css("overflow", "auto");
+	$('body').css('position','unset');
 });
