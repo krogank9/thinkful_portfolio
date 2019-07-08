@@ -284,6 +284,7 @@ body {
 
 .modal-open-checkbox:checked ~ .body-container {
 	overflow: hidden;
+	-webkit-overflow-scrolling: auto;
 }
 
 .modal-open-checkbox {
